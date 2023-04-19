@@ -6,7 +6,7 @@ export default function Projects() {
   useEffect(() => {
     async function getProjects() {
       try {
-        const response = await fetch("http://localhost/api/projects");
+        const response = await fetch("https://console.bassilyounes.com/api/projects");
         const data = await response.json();
         setProjects(data);
       } catch (error) {
