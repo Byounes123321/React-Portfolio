@@ -194,6 +194,7 @@ h1 {
 
 .projectSkills img {
   width: 100%;
+  border:none;
 }
 .projectSkills {
   display: grid;
