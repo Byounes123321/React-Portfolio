@@ -1,4 +1,4 @@
-import Logo from './Logo.png';
+import Logo from './imgs/Logo.png';
 import Nav from './Nav';
 
 function Header() {

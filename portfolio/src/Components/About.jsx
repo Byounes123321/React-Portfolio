@@ -1,4 +1,4 @@
-import headshot from './HeadShot.jpg';
+import headshot from './imgs/HeadShot.jpg';
 export default function About(){
     return(
         <>

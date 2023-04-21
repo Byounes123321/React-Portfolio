@@ -249,9 +249,16 @@ svg {
   margin: auto;
   margin-bottom: 25px;
 }
+.imgEduContainer{
+display: flex;
+align-items: center;
+}
 .eduItem img {
   width: 25%;
   border: none;
+  height: 100%;
+  align-self: center;
+  margin-left: 50px;
 }
 
 .eduDesc {

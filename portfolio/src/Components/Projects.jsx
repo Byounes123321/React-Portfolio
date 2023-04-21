@@ -27,18 +27,16 @@ export default function Projects() {
       </div>
 
       {projects ? (
-        <ul>
+        <>
           {projects.map((project) => {
               return (
-                  <li key={project.id}>
                       <div className="projects">
                           <div className="projImgs">
-                              <img className="projectimg" src="https://aeroclub-issoire.fr/wp-content/uploads/2020/05/image-not-found.jpg" alt="" />
+                              <img className="projectimg" src={project.image} alt="" />
                               <div className="projectSkills">
                                   {project.skills.map((skill) => (
                                       <>
-                                          <p>{skill.name}</p>
-                                          <img src="https://aeroclub-issoire.fr/wp-content/uploads/2020/05/image-not-found.jpg" alt="" />
+                                          <img src={`https://console.bassilyounes.com/storage/${skill.logo}`} alt="" />
                                       </>
                                   ))}
                               </div>
@@ -52,10 +50,9 @@ export default function Projects() {
                               </div>
                           </div>
                       </div>
-                  </li>
               );
           })}
-        </ul>
+        </>
       ) : (
         <p>Loading projects...</p>
       )}

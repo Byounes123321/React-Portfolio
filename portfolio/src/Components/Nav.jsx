@@ -1,4 +1,4 @@
-import resume from './Resume.pdf';
+import resume from './imgs/Resume.pdf';
 function Nav(){
     return (
         <nav class="nav">
