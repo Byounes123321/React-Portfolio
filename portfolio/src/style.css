@@ -165,17 +165,31 @@ h1 {
   max-height: 285.25px;
   max-width: 504px;
 }
-
+*{
+}
 /* projects */
 
 .projects {
   display: flex;
   gap: 25px;
+
+
+}
+.projImgs {
+   width: 30%;
+  max-width: 500px;
+
+
 }
 .projectimg {
   width: 100%;
   height: auto;
   max-width: 500px;
+}
+
+projDesc{
+
+
 }
 
 .projectSkills img {
@@ -194,10 +208,7 @@ h3 {
 .projects p {
   text-align: right;
 }
-.projImgs {
-  width: 400%;
-  max-width: 500px;
-}
+
 /* The skills images need to stay within the project img */
 
 /* more projects */
