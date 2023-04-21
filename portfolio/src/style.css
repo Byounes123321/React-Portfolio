@@ -171,7 +171,7 @@ h1 {
 
 .projects {
   display: flex;
-  gap: 25px;
+  gap: 10em;
 
 
 }
@@ -187,8 +187,8 @@ h1 {
   max-width: 500px;
 }
 
-projDesc{
-
+.projDesc{
+  max-width: 500px;
 
 }
 
