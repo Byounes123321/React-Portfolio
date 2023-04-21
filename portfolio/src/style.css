@@ -290,11 +290,11 @@ align-items: center;
   width: 100%;
 }
 .skillitem img {
-  width: 100%;
+  width: 80%;
   border: none;
 }
 .progOutline {
-  width: 100%;
+  width: 80%;
   height: 10px;
   border: var(--darkBlue) 2px solid;
   border-radius: 15px;
