@@ -6,6 +6,10 @@
   --lightBlue: #778da9;
   --offWhite: #e0e1dd;
 }
+*{
+  font-family: montserrat;
+  font-weight: 600;
+}
 html {
   background-color: var(--background);
   font-family: montserrat, OpenSans;
@@ -130,6 +134,8 @@ h1 {
   color: var(--offWhite);
   font-size: 7em;
   margin: 0px;
+  font-family: montserrat;
+  font-weight: 600;
 }
 .landing h2 {
   text-align: left;
