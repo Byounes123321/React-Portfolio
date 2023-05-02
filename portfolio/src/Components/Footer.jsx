@@ -3,7 +3,7 @@ export default function Footer() {
   
     return (
       <footer>
-        &copy; {currentYear} bassilyounes
+        &copy; Copyright Bassil Younes, {currentYear} 
       </footer>
     );
   }

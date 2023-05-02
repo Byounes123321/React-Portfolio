@@ -36,7 +36,7 @@ export default function Projects() {
                               <div className="projectSkills">
                                   {project.skills.map((skill) => (
                                       <>
-                                          <img src={`https://console.bassilyounes.com/storage/${skill.logo}`} alt="" />
+                                          <img src={`https://console.bassilyounes.com/storage/${skill.logo}`} alt={skill.name}/>
                                       </>
                                   ))}
                               </div>
