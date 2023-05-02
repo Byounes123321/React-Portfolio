@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     <Header />
+    <Socials/>
     <main className='main'>
-      <Socials/>
       <Landing/>
       <About />
       <Projects />
