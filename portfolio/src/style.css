@@ -294,6 +294,47 @@ align-items: center;
   color: var(--offWhite);
   font-size: small;
 }
+/* Socials */
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: fixed;
+  left: 35px;
+  top: 700px;
+  }
+  .socials a{
+    width: fit-content;
+  }
+  .social {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  /* transition-duration: 1s; */
+  border: none;
+  filter: invert(60%) sepia(16%) saturate(633%) hue-rotate(174deg) brightness(88%) contrast(84%);
+  }
+.social:hover {
+  filter: invert(92%) sepia(1%) saturate(713%) hue-rotate(34deg) brightness(107%) contrast(78%);
+  outline-offset: 10px;
+  animation: shake .7s;
+}
+@keyframes shake {
+  10% {
+  transform: rotate(15deg);
+  }
+  20% {
+  transform: rotate(-15deg);
+  }
+  30% {
+  transform: rotate(15deg);
+  }
+  40% {
+
+  transform: rotate(-15deg);
+  }
+  }
+
 /* skills */
 
 .skillsContainer {

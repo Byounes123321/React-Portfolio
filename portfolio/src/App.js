@@ -7,12 +7,14 @@ import Education from './Components/Education';
 import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import Socials from './Components/Socials';
 
 function App() {
   return (
     <>
     <Header />
     <main className='main'>
+      <Socials/>
       <Landing/>
       <About />
       <Projects />
