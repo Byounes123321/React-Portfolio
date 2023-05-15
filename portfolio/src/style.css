@@ -301,7 +301,7 @@ align-items: center;
   gap: 25px;
   position: fixed;
   left: 35px;
-  top: 700px;
+  top: 75%;
   }
   .socials a{
     width: fit-content;
