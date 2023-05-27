@@ -2,11 +2,11 @@ import React from "react";
 import resume from "./imgs/Resume.pdf";
 
 export default function MobileNav() {
-  if (!isDesktopMode) {
-    window.onload = function () {
+  window.onload = function () {
+    if (!isDesktopMode()) {
       window.scrollTo(0, 150);
-    };
-  }
+    }
+  };
   var isClicked = false;
   const checkElement = document.getElementById("check");
   const mNavElements = document.getElementsByClassName("mNav");
