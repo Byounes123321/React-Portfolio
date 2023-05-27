@@ -1,9 +1,13 @@
 import React from "react";
+import resume from "./imgs/Resume.pdf";
 
 export default function MobileNav() {
+  window.onload = function () {
+    window.scrollTo(0, 150);
+  };
   var isClicked = false;
-  var checkElement = document.getElementById("check");
-  var mNavElements = document.getElementsByClassName("mNav");
+  const checkElement = document.getElementById("check");
+  const mNavElements = document.getElementsByClassName("mNav");
   // var navLinks = document.getElementById('navLinks');
   var navLinks = document.querySelectorAll("#navLinks li a");
 
@@ -16,15 +20,21 @@ export default function MobileNav() {
   function toggleDisplay() {
     if (isDesktopMode()) {
       mNavElements[0].style.display = "none";
+      checkElement.checked = false;
+      isClicked = true;
+      document.getElementsByClassName("mobileNav")[0].className = "mobileNav";
     } else {
       if (!isClicked) {
         mNavElements[0].style.display = "none";
         checkElement.checked = false;
         isClicked = true;
+        document.getElementsByClassName("mobileNav")[0].className = "mobileNav";
       } else {
         mNavElements[0].style.display = "block";
         checkElement.checked = true;
         isClicked = false;
+        document.getElementsByClassName("mobileNav")[0].className =
+          "mobileNav active";
       }
     }
   }
@@ -60,7 +70,7 @@ export default function MobileNav() {
           </li>
         </ul>
         <div className="btnContainer">
-          <a href="./Resources/ResumeWebDev-2023 (2).pdf" target="_blank">
+          <a href={resume} target="_blank" rel="noreferrer">
             <div className="btn">
               <div className="text">Resume</div>
             </div>
