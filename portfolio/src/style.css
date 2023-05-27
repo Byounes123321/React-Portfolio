@@ -376,8 +376,6 @@ footer {
 
 .mobileNav {
   display: block;
-
-  transition: 5s;
 }
 .hamMenu {
   display: none;
@@ -434,21 +432,22 @@ footer {
     right: 10px;
     z-index: 1000;
   }
-  .displayed {
+  /* .displayed {
     transition: 5s;
-  }
-  .mobileNav .displayed {
+  } */
+  .mobileNav {
+    padding-top: 75px;
     display: block;
     position: absolute;
     height: fit-content;
-    width: 55vw;
+    width: 45vw;
     top: 0;
     right: 0;
     background-color: var(--darkBlue);
     color: #000000;
     z-index: 100;
     opacity: 100;
-    box-shadow: 0px 6px 23px -1px #000000;
+    box-shadow: 0px 0px 23px -1px #000000;
     /* transform: translateX(-200px); */
   }
   .navlinks {
@@ -457,6 +456,12 @@ footer {
     flex-direction: column;
     gap: 2em;
     text-align: center;
+    padding: 0;
+  }
+  .navlinks a {
+    color: var(--offWhite);
+    font-size: 1.5em;
+    text-decoration: none;
   }
   .btnContainer {
     display: flex;
