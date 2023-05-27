@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Logo from './imgs/Logo.png';
-import Nav from './Nav';
+import React, { useState, useEffect } from "react";
+import Logo from "./imgs/Logo.png";
+import Nav from "./Nav";
+import MobileNav from "./MobileNav";
+import isClicked from "./HamMenu";
 
-function Header() {
+function Header(isMobile) {
   const [isSticky, setIsSticky] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
@@ -16,20 +18,21 @@ function Header() {
       }
       setPrevScrollPos(currentScrollPos);
     }
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
   return (
-    <header className={isSticky ? 'header sticky' : 'header'}>
+    <header className={isSticky ? "header sticky" : "header"}>
       <div className="logo">
         <a href="/">
-            <img src={Logo} title="logo" alt="logo for bassilyounes"/>
+          <img src={Logo} title="logo" alt="logo for bassilyounes" />
         </a>
       </div>
-      <Nav />
+      <Nav isMobile />
+      <MobileNav isMobile />
     </header>
   );
 }

@@ -1,10 +1,10 @@
-import headshot from './imgs/HeadShot.jpg';
-export default function About(){
-    return(
-        <>
-        <div id='about'>
+import headshot from "./imgs/HeadShot.jpg";
+export default function About() {
+  return (
+    <>
+      <div id="about">
         <h2>About Me</h2>
-        </div>
+      </div>
       <div className="about">
         <p>
           Hello, I'm Bassil Younes! I'm a Web Development Student at Humber
@@ -21,6 +21,6 @@ export default function About(){
         </p>
         <img src={headshot} alt="not found" />
       </div>
-      </>
-    )
+    </>
+  );
 }
