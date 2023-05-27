@@ -4,6 +4,8 @@ export default function MobileNav() {
   var isClicked = false;
   var checkElement = document.getElementById("check");
   var mNavElements = document.getElementsByClassName("mNav");
+  // var navLinks = document.getElementById('navLinks');
+  var navLinks = document.querySelectorAll("#navLinks li a");
 
   // Function to check if the page is in desktop mode
   function isDesktopMode() {
@@ -17,9 +19,11 @@ export default function MobileNav() {
     } else {
       if (!isClicked) {
         mNavElements[0].style.display = "none";
+        checkElement.checked = false;
         isClicked = true;
       } else {
         mNavElements[0].style.display = "block";
+        checkElement.checked = true;
         isClicked = false;
       }
     }
@@ -30,6 +34,9 @@ export default function MobileNav() {
     console.log("MobileNav.jsx: MobileNav is loaded");
     mNavElements[0].style.display = "none";
     checkElement.addEventListener("click", toggleDisplay);
+    navLinks.forEach((link) => {
+      link.addEventListener("click", toggleDisplay);
+    });
   }
 
   return (
