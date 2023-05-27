@@ -5,6 +5,7 @@ export default function MobileNav() {
   window.onload = function () {
     if (!isDesktopMode()) {
       window.scrollTo(0, 150);
+      toggleDisplay();
     }
   };
   var isClicked = false;
