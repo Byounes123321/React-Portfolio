@@ -53,7 +53,12 @@ export default function Projects() {
                   <div className="projectSkills">
                     {project.skills.map((skill) => (
                       <>
-                        <a href={skill.url} target="_blank" rel="noreferrer">
+                        <a
+                          href={skill.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          title={skill.name}
+                        >
                           <img
                             src={`https://console.bassilyounes.com/storage/${skill.logo}`}
                             alt={skill.name}
