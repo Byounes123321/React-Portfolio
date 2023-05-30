@@ -208,13 +208,15 @@ h1 {
 
 .projDesc {
   max-width: 500px;
+  height: fit-content;
 }
 .projDesc a {
   color: white;
   font-size: 1.5em;
   text-decoration: none;
 }
-.projDesc a:hover {
+.hover-container:hover h3,
+.hover-container:hover p ~ h3 {
   color: var(--lightBlue);
   transition: 0.5s;
 }
@@ -231,10 +233,12 @@ h1 {
 h3 {
   margin: 0;
   color: var(--offWhite);
-  text-align: center;
+  text-align: left;
 }
 .projects p {
-  text-align: right;
+  text-align: left;
+  color: var(--offWhite);
+  font-size: 0.7em;
 }
 
 /* The skills images need to stay within the project img */

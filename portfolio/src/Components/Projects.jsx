@@ -37,7 +37,7 @@ export default function Projects() {
 
       {projects ? (
         <>
-          {projects.map((project, index) => {
+          {projects.map((project) => {
             return (
               <div className="projects">
                 <div className="projImgs">
@@ -64,20 +64,19 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="projDesc">
-                  <div>
-                    <h3>
-                      <a
-                        href={github[project.title]}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {project.title}
-                      </a>
-                    </h3>
-                  </div>
-                  <div>
-                    <p>{project.content}</p>
-                  </div>
+                  <a
+                    href={github[project.title]}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover-container"
+                  >
+                    <div>
+                      <h3>{project.title}</h3>
+                    </div>
+                    <div>
+                      <p>{project.content}</p>
+                    </div>
+                  </a>
                 </div>
               </div>
             );
