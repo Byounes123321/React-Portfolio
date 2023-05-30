@@ -175,12 +175,23 @@ h1 {
 /* projects */
 
 .projects {
+  justify-content: center;
   display: flex;
   gap: 10em;
+  margin-bottom: 2.5em;
+  /* margin-left: 10em; */
+  /* margin: auto; */
+}
+.projects-flipped {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10em;
+  margin-bottom: 2.5em;
 }
 .projImgs {
   width: 30%;
   max-width: 500px;
+  min-width: 300px;
 }
 .projectimg {
   width: 100%;
@@ -188,8 +199,24 @@ h1 {
   max-width: 500px;
 }
 
+.projimga :hover {
+  scale: 1.02;
+  transition: 0.5s;
+  box-shadow: 0px 10px 25px 10px #000000;
+  /* transition-timing-function: ease-in-out; */
+}
+
 .projDesc {
   max-width: 500px;
+}
+.projDesc a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.projDesc a:hover {
+  color: var(--lightBlue);
+  transition: 0.5s;
 }
 
 .projectSkills img {
@@ -401,6 +428,12 @@ footer {
     /* top: 75%; */
   }
   .projects {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+  }
+  .projects-flipped {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "./imgs/Logo.png";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-import isClicked from "./HamMenu";
+// import isClicked from "./HamMenu";
 
 function Header(isMobile) {
   const [isSticky, setIsSticky] = useState(true);
