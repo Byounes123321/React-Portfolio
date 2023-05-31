@@ -19,7 +19,7 @@ export default function Skills() {
     getSkill();
   }, []);
 
-  console.log("Skills: ", skill);
+  // console.log("Skills: ", skill);
 
   return (
     <div className="skills">

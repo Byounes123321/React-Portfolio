@@ -27,7 +27,7 @@ export default function Projects() {
     getProjects();
   }, []);
 
-  console.log("projects: ", projects);
+  // console.log("projects: ", projects);
 
   return (
     <>

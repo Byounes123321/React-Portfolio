@@ -44,7 +44,7 @@ export default function MobileNav() {
 
   if (checkElement && mNavElements.length > 0) {
     toggleDisplay(); // Call the function initially to set the display
-    console.log("MobileNav.jsx: MobileNav is loaded");
+    // console.log("MobileNav.jsx: MobileNav is loaded");
     mNavElements[0].style.display = "none";
     checkElement.addEventListener("click", toggleDisplay);
     navLinks.forEach((link) => {
