@@ -280,7 +280,20 @@ svg {
   display: flex;
   justify-content: center;
 }
-
+/* Experience */
+.skillsList {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: auto;
+  margin-bottom: 25px;
+  /* border: #fff solid 1px; */
+}
+.skillTitle {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
 /* Education */
 
 .eduItem {

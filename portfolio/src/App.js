@@ -9,6 +9,7 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Socials from "./Components/Socials";
+import Experience from "./Components/Experience";
 
 function App() {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -32,6 +33,7 @@ function App() {
         <Landing />
         <About />
         <Projects />
+        <Experience />
         <Education imgSize={viewportWidth} />
         <Skills />
         <Contact />
