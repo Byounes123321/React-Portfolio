@@ -2,7 +2,7 @@ import companyLogo from "./imgs/CompanyLogo.png";
 
 export default function Experience() {
   return (
-    <div className="education">
+     <div className="education">
       <h2 id="experience">Experience</h2>
       <div className="eduItem">
         <img src={companyLogo} alt="Company Logo" />

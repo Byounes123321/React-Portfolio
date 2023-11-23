@@ -7,9 +7,9 @@ export default function About() {
       </div>
       <div className="about">
         <p>
-          Hello, I'm Bassil Younes! I'm a Web Development Student at Humber
+          Hello, I'm Bassil Younes! I'm a Web Developer and recent grad from Humber
           College with a passion for coding, video games, baking, and parkour.
-          With an advanced diploma in entrepreneurship and small business, I
+          With an advanced diploma in entrepreneurship and small business admin, I
           have developed a keen eye for problem-solving and creating value for
           users. I love solving coding challenges and building web-based
           applications because it allows me to create innovative solutions and
